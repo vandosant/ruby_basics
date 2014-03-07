@@ -3,7 +3,6 @@ require 'spec_helper'
 describe "beer_on_the_wall" do
 
   it "prints out the first verse for 99 bottles of beer on the wall, when told to 'sing'" do
-    pending
     run_script("beer_on_the_wall.rb")
     type("99")
 
