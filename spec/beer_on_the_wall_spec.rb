@@ -18,10 +18,8 @@ describe "beer_on_the_wall" do
   end
 
   it "correctly prints out the lyrics for 2 bottles of beer, when told to sing" do
-    pending
     run_script("beer_on_the_wall.rb")
     type("2")
-
     expect(all_output).to match("2 bottles of beer on the wall, 2 bottles of beer.\nTake one down and pass it around, 1 bottle of beer on the wall.\n")
     expect(all_output).to_not include("Fine, don't listen to my song.")
   end
