@@ -1,7 +1,7 @@
 # Roman numeral converter
 
 # Get user input
-puts "Type a number:"
+puts "Type an integer:"
 x = gets().to_i
 
 # Convert integer to roman numeral
