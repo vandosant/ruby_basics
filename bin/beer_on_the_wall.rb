@@ -1,4 +1,5 @@
 # Ask for user instruction
+puts "How many verses?:"
 input = gets().chomp
 
 
