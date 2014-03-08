@@ -19,7 +19,7 @@ Take one down and pass it around, #{(input.pred)} bottle of beer on the wall."
 
   if input == 1
     puts "#{input} bottle of beer on the wall, #{input} bottle of beer.
-Take one down and pass it around, #{(input.pred)} bottles of beer on the wall."
+Take one down and pass it around, no bottles of beer on the wall."
     input -= 1
   end
 end
