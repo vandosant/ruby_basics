@@ -13,7 +13,6 @@ describe "beer_on_the_wall" do
   it "prints out the lyrics for the rest of the verses" do
     run_script("beer_on_the_wall.rb")
     type("8")
-    pending
     expect(all_output).to match("8 bottles of beer on the wall, 8 bottles of beer.\nTake one down and pass it around, 7 bottles of beer on the wall.\n7 bottles of beer on the wall, 7 bottles of beer.\nTake one down and pass it around, 6 bottles of beer on the wall.\n")
     expect(all_output).to_not include("Fine, don't listen to my song.")
   end

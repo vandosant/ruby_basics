@@ -1,13 +1,12 @@
 # Ask for user instruction
-input = gets().chomp.to_str.downcase
+input = gets().chomp
 
-if input == "sing" || input == "99"
-  puts "99 bottles of beer on the wall, 99 bottles of beer.
-Take one down and pass it around, #{(99-1)} bottles of beer on the wall."
+
+if (1..99).cover?(input.to_i)
+  input = input.to_i
+  input.times do
+  puts "#{input} bottles of beer on the wall, #{input} bottles of beer.
+Take one down and pass it around, #{(input.pred)} bottles of beer on the wall."
+  input -= 1
+  end
 end
-
-# Placeholder code for case when int is passed
-#if input[0..3] == "sing"
-#  puts "#{input[5..6]} bottles of beer on the wall, #{input[5..6]} bottles of beer.
-#  Take one down and pass it around, #{(input[5..6].to_i-1)} bottles of beer on the wall."
-#end
