@@ -6,11 +6,25 @@ x = gets().to_i
 roman = ""
 place = 0
 # Convert integer to roman numeral
+if x / 100 >= 1
+  (x/100).times do
+    roman += "C"
+    place += 1
+    x -= 100
+  end
+end
+if x / 50 >= 1
+  (x/50).times do
+    roman += "L"
+    place += 1
+    x -= 50
+  end
+end
 if x / 10 > 1
   (x/10).times do
     roman += "X"
-    x -= 10
     place += 1
+    x -= 10
   end
 end
 if x > 8
