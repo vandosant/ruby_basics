@@ -2,8 +2,7 @@
 puts "How many verses?:"
 input = gets().chomp
 
-
-if (0..99).cover?(input.to_i)
+if /[0-9]|[0-9]/.match(input)
   input = input.to_i
   while input > 2
     puts "#{input} bottles of beer on the wall, #{input} bottles of beer.
@@ -27,4 +26,6 @@ Take one down and pass it around, no bottles of beer on the wall."
     puts "No bottles of beer on the wall, no more bottles of beer.
 Go to the store and buy some more, 99 bottles of beer on the wall."
   end
+else
+  puts "I need to know how many bottles to sing!"
 end
