@@ -34,7 +34,6 @@ describe "RomanNumerals" do
   end
 
   it "converts the four-digit number to traditional roman numerals" do
-    pending
     run_script("roman_numerals.rb")
     type("1468")
 
