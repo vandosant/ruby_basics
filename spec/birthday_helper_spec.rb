@@ -12,7 +12,6 @@ describe "BirthdayHelper" do
   end
 
   it "returns the birth date and age of the last name typed in" do
-    pending
     run_script("birthday_helper.rb")
     type("Dean")
 

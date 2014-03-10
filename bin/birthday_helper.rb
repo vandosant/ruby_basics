@@ -20,11 +20,14 @@ class Birthday
   def first_name
     @first_name
   end
+  def last_name
+    @last_name
+  end
   def age
     today = Date._parse(Time.now.to_s.slice(/\d+-\d+-\d+/))
     parsed_birthdate = Date._parse(@date_of_birth)
     @age = (today[:year] - parsed_birthdate[:year])
-    month_names = {5 => "May"}
+    month_names = {5 => "May", 11 => "November"}
     puts month_names[parsed_birthdate[:mon]].to_s + " " + parsed_birthdate[:mday].to_s + ", " + parsed_birthdate[:year].to_s + ",\n                                " + @age.to_s + " years old"
   end
 end
@@ -43,6 +46,9 @@ end
 identity = 0
 personas.each {
   if input == personas[identity].first_name
+    personas[identity].age
+  end
+  if input == personas[identity].last_name
     personas[identity].age
   end
 identity += 1
