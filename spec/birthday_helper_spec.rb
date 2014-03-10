@@ -2,7 +2,6 @@ require 'spec_helper'
 
 describe "BirthdayHelper" do
   it "returns the birth date and age of the first name typed in" do
-    pending
     run_script("birthday_helper.rb")
     type("Mike")
 
