@@ -57,7 +57,7 @@ if x > 4
   x -= 5
 end
 if x >= 1
-  x.times do roman += "I" end
+  x.times { roman += "I" }
 end
 if x <= 100
   (x.abs / 100).times do
@@ -84,6 +84,6 @@ if x < 4
   end
 end
 if x < 0
-  x.abs.times do roman.insert(place, "I") end
+  x.abs.times { roman.insert(place, "I") }
 end
 puts roman
