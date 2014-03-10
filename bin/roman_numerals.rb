@@ -2,7 +2,7 @@
 
 # Get user input
 puts "Type an integer:"
-x = gets().to_i
+x = gets.to_i
 roman = ""
 place = 0
 # Convert integer to roman numeral
